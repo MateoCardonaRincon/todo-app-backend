@@ -21,12 +21,12 @@ public class NoteController {
     }
 
     @PostMapping("save/note")
-    public Note saveNote(Note note) {
+    public Note saveNote(@RequestBody Note note) {
         return noteService.saveNote(note);
     }
 
     @PutMapping("update/note")
-    public Note updateNote(Note note) {
+    public Note updateNote(@RequestBody Note note) {
         return noteService.updateNote(note);
     }
 
